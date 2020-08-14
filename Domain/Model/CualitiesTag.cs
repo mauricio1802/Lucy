@@ -4,15 +4,14 @@ namespace Domain.Model
     {
         private int id;
         private string tagValue;
+        
 
         // Id porperty
         public int Id => id;
-
         // TagValue porperty
         public string TagValue => tagValue;
 
-
-        // Overrdie GetHashCode
+        // override GetHashCode
         public override int GetHashCode()
         {
             var hashcode = 352033288;

@@ -1,0 +1,2 @@
+Dudas:
+    1) - La tabla portfolio deberia contener como llave foranea un identificador de usuario o un identificador de dispatcher ?. [13/8/20]
