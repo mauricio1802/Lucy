@@ -1,3 +1,4 @@
+using System;
 using System.Drawing;
 namespace Domain.Model
 {
@@ -57,15 +58,15 @@ namespace Domain.Model
         // default constructor
         public LucyImage()
         {
-            
+         this.creationDateTime = DateTime.Now.Date.ToShortDateString();   
         }
 
         // paramaters constructor
-        public LucyImage(int _id,string _caption,string _creationDateTime, Image _image)
+        public LucyImage(int _id,string _caption, Image _image)
         {
             this.id = _id;
             this.caption = _caption;
-            this.creationDateTime = _creationDateTime;
+            this.creationDateTime = DateTime.Now.Date.ToShortDateString();
             this.image =_image;
         }
 

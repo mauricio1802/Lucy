@@ -29,8 +29,6 @@ namespace Domain.Model
                    this.idState.Equals((obj as OrderWork).idState) &&
                    this.orderWorkName.Equals((obj as OrderWork).orderWorkName) &&
                    this.idUserWorker.Equals((obj as OrderWork).idUserWorker);
-
-
         }
         // override GetHashCode
         public override int GetHashCode()
@@ -42,6 +40,22 @@ namespace Domain.Model
             hashcode = hashcode * -1524434295 + this.idUserWorker.GetHashCode();
             hashcode = hashcode * -1524434295 + this.orderWorkName.GetHashCode();
             return hashcode;
+        }
+
+        // empty constructor
+        public OrderWork()
+        {
+            
+        }
+
+        // parameters  constructor
+        public OrderWork(int _id,int _idState,int  _idUserCustomer,int _idUserWorker,string _orderWorkName)
+        {
+            this.id = _id;
+            this.idState = _idState;
+            this.idUserCustomer = _idUserCustomer;
+            this.idUserWorker = _idUserWorker;
+            this.orderWorkName = _orderWorkName;
         }
     }
 }

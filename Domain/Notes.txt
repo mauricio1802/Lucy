@@ -1,2 +1,3 @@
 Dudas:
     1) - La tabla portfolio deberia contener como llave foranea un identificador de usuario o un identificador de dispatcher ?. [13/8/20]
+    2) - La ultima expresion del metodo Equals en la clase Locations funciona como se espera ? [14/8/20]
